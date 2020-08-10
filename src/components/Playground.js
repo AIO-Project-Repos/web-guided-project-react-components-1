@@ -13,8 +13,10 @@ import React, { useState } from 'react'
 export default function Playground(props) {
   const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * 10))
 
-  const getRandom = () => {
-    
+  const getRandom = (event) => {
+    // we are going to put a new random number in state
+    // so the JSX will refresh itself with the new data
+    setRandomNum(Math.floor(Math.random() * 10))
   }
 
   return (
