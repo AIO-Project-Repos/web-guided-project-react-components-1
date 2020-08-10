@@ -38,7 +38,7 @@ function App(props) {
   )
 }
 
-render(
+render( // one-time operation
   <App name='Andre' />,
   document.querySelector('#root')
 )
