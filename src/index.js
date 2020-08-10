@@ -23,8 +23,8 @@ import { render } from 'react-dom'
 
 function App(props) {
   return (
-    <div className='container'>
-      <h1>Welcome to React, {props.name}</h1>
+    <div className={'cont' + 'ainer'}>
+      <h1>Welcome to React, {4 < 5 ? 'correct' : 'naah'}, {props.name}</h1>
     </div>
   )
 }
