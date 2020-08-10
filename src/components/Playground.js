@@ -24,13 +24,14 @@ export default function Playground(props) {
       <h1>This is the playground of {props.friend}</h1>
       <h3>The random number is {randomNum}</h3>
       <h4>It is {randomNum % 2 === 0 ? 'even' : 'odd'}</h4>
+      {/* a comment */}
 
-      {
+      {/* {
         randomNum < 5 && <h4>It is smaller than 5</h4>
       }
       {
         randomNum >= 5 && <h4>It is 5 or greater</h4>
-      }
+      } */}
 
       {
         randomNum < 5
