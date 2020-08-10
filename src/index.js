@@ -21,10 +21,19 @@ import { render } from 'react-dom'
   - Don't forget all tags need to close correctly
 */
 
+function Playground(props) {
+  return (
+    <div className='container'>
+      <h1>This is the playground of {props.friend}</h1>
+    </div>
+  )
+}
+
 function App(props) {
   return (
     <div className={'cont' + 'ainer'}>
       <h1>Welcome to React, {4 < 5 ? 'correct' : 'naah'}, {props.name}</h1>
+      <Playground friend={props.name} />
     </div>
   )
 }
