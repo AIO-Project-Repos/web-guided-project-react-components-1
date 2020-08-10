@@ -19,10 +19,15 @@ export default function Playground(props) {
     setRandomNum(Math.floor(Math.random() * 10))
   }
 
+  const style = {
+    marginBottom: '4px',
+    color: randomNum < 5 ? 'red' : 'green',
+  }
+
   return (
     <div className='container'>
       <h1>This is the playground of {props.friend}</h1>
-      <h3>The random number is {randomNum}</h3>
+      <h3 style={style}>The random number is {randomNum}</h3>
       <h4>It is {randomNum % 2 === 0 ? 'even' : 'odd'}</h4>
       {/* a comment */}
 
