@@ -12,6 +12,8 @@ import React, { useState } from 'react'
 
 export default function Playground(props) {
   const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * 10))
+  // WHETHER RAINING OR NOT
+  const [isRaining, setIsRaining] = useState(false)
 
   const getRandom = (event) => {
     // we are going to put a new random number in state
@@ -34,6 +36,9 @@ export default function Playground(props) {
       {/* a comment */}
       {/* {randomNum < 5 && <h4>It is smaller than 5</h4>} */}
       {/* {randomNum >= 5 && <h4>It is 5 or greater</h4>} */}
+      {
+        // if raining 'better get umbrella' otherwise 'better get sunscreen'
+      }
 
       {
         randomNum < 5
