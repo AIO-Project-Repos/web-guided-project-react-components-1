@@ -23,7 +23,11 @@ export default function Playground(props) {
     <div className='container'>
       <h1>This is the playground of {props.friend}</h1>
       <h3>The random number is {randomNum}</h3>
-      <div>The random number is {randomNum % 2 === 0 ? 'even' : 'odd'}</div>
+      <h4>It is {randomNum % 2 === 0 ? 'even' : 'odd'}</h4>
+
+      {
+        randomNum < 5 && <h4>It is smaller than 5</h4>
+      }
 
       <button onClick={getRandom}>get a new random number</button>
     </div>
