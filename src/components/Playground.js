@@ -17,6 +17,7 @@ export default function Playground(props) {
     <div className='container'>
       <h1>This is the playground of {props.friend}</h1>
       <h3>The random number is {randomNum}</h3>
+      <div>The random number is {randomNum % 2 === 0 ? 'even' : 'odd'}</div>
     </div>
   )
 }
