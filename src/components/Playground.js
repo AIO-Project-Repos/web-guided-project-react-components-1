@@ -51,8 +51,8 @@ export default function Playground(props) {
 
       {
         isRaining
-          ? <h4>better get umbrella</h4>
-          : <h4>better get sunscreen</h4>
+          ? <h3>better get umbrella</h3>
+          : <h3>better get sunscreen</h3>
       }
 
       <button onClick={evt => setIsRaining(true)}>make rain</button>
