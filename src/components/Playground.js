@@ -13,11 +13,17 @@ import React, { useState } from 'react'
 export default function Playground(props) {
   const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * 10))
 
+  const getRandom = () => {
+    
+  }
+
   return (
     <div className='container'>
       <h1>This is the playground of {props.friend}</h1>
       <h3>The random number is {randomNum}</h3>
       <div>The random number is {randomNum % 2 === 0 ? 'even' : 'odd'}</div>
+
+      <button onClick={getRandom}>get a new random number</button>
     </div>
   )
 }
