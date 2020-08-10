@@ -8,12 +8,15 @@
   - We never tamper with state: `healthPoints++`, `healthPoints--` or `someState.push(item)` is FORBIDDEN
   - We use the dedicated "state updater" to schedule a state change: `setHealthPoints(healthPoints + 1)`
 */
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Playground(props) {
+  const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * 10))
+
   return (
     <div className='container'>
       <h1>This is the playground of {props.friend}</h1>
+      <h3>The random number is {randomNum}</h3>
     </div>
   )
 }
