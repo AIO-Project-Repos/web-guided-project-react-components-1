@@ -28,6 +28,9 @@ export default function Playground(props) {
       {
         randomNum < 5 && <h4>It is smaller than 5</h4>
       }
+      {
+        randomNum > 5 && <h4>It is 5 or greater</h4>
+      }
 
       <button onClick={getRandom}>get a new random number</button>
     </div>
