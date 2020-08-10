@@ -24,6 +24,8 @@ export default function Playground(props) {
     color: randomNum < 5 ? 'red' : 'green',
   }
 
+  if (randomNum === 1) return <h1>IT IS THE ONE</h1>
+
   return (
     <div className='container'>
       <h1>This is the playground of {props.friend}</h1>
@@ -31,12 +33,8 @@ export default function Playground(props) {
       <h4>It is {randomNum % 2 === 0 ? 'even' : 'odd'}</h4>
       {/* a comment */}
 
-      {/* {
-        randomNum < 5 && <h4>It is smaller than 5</h4>
-      }
-      {
-        randomNum >= 5 && <h4>It is 5 or greater</h4>
-      } */}
+      {randomNum < 5 && <h4>It is smaller than 5</h4>}
+      {randomNum >= 5 && <h4>It is 5 or greater</h4>}
 
       {
         randomNum < 5
