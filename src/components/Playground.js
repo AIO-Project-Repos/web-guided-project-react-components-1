@@ -21,6 +21,10 @@ export default function Playground(props) {
     setRandomNum(Math.floor(Math.random() * 10))
   }
 
+  const toggleWeather = evt => {
+    setIsRaining(!isRaining)
+  }
+
   const style = {
     marginBottom: '4px',
     color: randomNum < 5 ? 'red' : 'green',
@@ -43,8 +47,9 @@ export default function Playground(props) {
           : <h4>better get sunscreen</h4>
       }
 
-      <button>make rain</button>
-      <button>make shine</button>
+      <button onClick={evt => setIsRaining(true)}>make rain</button>
+      <button onClick={() => setIsRaining(false)}>make shine</button>
+      <button onClick={toggleWeather}>toggle weather</button>
 
       {
         randomNum < 5
