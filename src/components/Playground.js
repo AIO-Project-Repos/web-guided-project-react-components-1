@@ -42,6 +42,14 @@ export default function Playground(props) {
       {/* {randomNum >= 5 && <h4>It is 5 or greater</h4>} */}
 
       {
+        randomNum < 5
+          ? <h4>Smaller than 5</h4>
+          : <h4>It is 5 or greater</h4>
+      }
+
+      <button onClick={getRandom}>get a new random number</button>
+
+      {
         isRaining
           ? <h4>better get umbrella</h4>
           : <h4>better get sunscreen</h4>
@@ -50,14 +58,6 @@ export default function Playground(props) {
       <button onClick={evt => setIsRaining(true)}>make rain</button>
       <button onClick={() => setIsRaining(false)}>make shine</button>
       <button onClick={toggleWeather}>toggle weather</button>
-
-      {
-        randomNum < 5
-          ? <h4>Smaller than 5</h4>
-          : <h4>It is 5 or greater</h4>
-      }
-
-      <button onClick={getRandom}>get a new random number</button>
     </div>
   )
 }
