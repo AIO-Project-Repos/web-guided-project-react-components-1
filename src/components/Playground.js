@@ -36,9 +36,15 @@ export default function Playground(props) {
       {/* a comment */}
       {/* {randomNum < 5 && <h4>It is smaller than 5</h4>} */}
       {/* {randomNum >= 5 && <h4>It is 5 or greater</h4>} */}
+
       {
-        // if raining 'better get umbrella' otherwise 'better get sunscreen'
+        isRaining
+          ? <h4>better get umbrella</h4>
+          : <h4>better get sunscreen</h4>
       }
+
+      <button>make rain</button>
+      <button>make shine</button>
 
       {
         randomNum < 5
